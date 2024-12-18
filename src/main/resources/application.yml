@@ -16,8 +16,8 @@ spring:
     database-platform: org.hibernate.dialect.MySQL8Dialect
   mail:
     host: smtp.gmail.com
-    username: Priyarout059@gmail.com
-    password: /@21priyarout
+    username: xyz@gmail.com
+    password: ***********
     properties:
       transport:
         protocol: smtp
