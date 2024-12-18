@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: Project-03-UserManagement
+#for data source
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///ntspbms911db
+    username: root
+    password: Akash@2k24
+    
+ #jpa-hibernate properties
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  mail:
+    host: smtp.gmail.com
+    username: Priyarout059@gmail.com
+    password: /@21priyarout
+    properties:
+      transport:
+        protocol: smtp
+      smtp:
+        port: 587
+        auth: true
+        starttls:
+          enable: true
+          required: true
+server:
+  port: 4041
+mailbody:
+   registeruser:
+      location: classpath:com/nt/service/user_registration_body.txt
+   recoverpwd: 
+      location: classpath:com/nt/service/recover_pwd_body.txt
